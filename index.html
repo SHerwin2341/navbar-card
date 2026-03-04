@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nomad Supply Co.</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <a href="#"> <h1>Nomad Supply Co.</h1> </a>
+      <nav>
+        <ul>
+          <li><a href="#">Collections</a></li>
+          <li><a href="#">Journal</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+
+      <button type="button">add to cart</button>
+    </header>
+
+    <main class="main-content">
+      <section class="featured-products">
+        <div class="featured-products__header">
+          <h2>Featured Products</h2>
+          <a href="#">View All</a>
+        </div>
+
+        <div class="products">
+          <article class="product-card">
+            <div class="product-card__image">
+              <span class="product-badge--sale">sale</span>
+              <img src="images/mountain.jpg" alt="" />
+            </div>
+            <p class="product-card__vendor">Nomad</p>
+            <h3 class="product-card__title">Trail Pack 28L</h3>
+            <p class="product-card__price">
+              <span class="product-card__price-current">$89.00</span>
+              <s class="product-card__price-compare">$120.00</s>
+            </p>
+            <button type="button" class="product-card__button">
+              add to cart
+            </button>
+          </article>
+
+          <article class="product-card">
+            <div class="product-card__image">
+              <img src="images/concert.jpg" alt="" />
+            </div>
+            <p class="product-card__vendor">Nomad</p>
+            <h3 class="product-card__title">Waxed Canvas Cap</h3>
+            <p class="product-card__price">$42.00</p>
+            <button type="button" class="product-card__button">
+              add to cart
+            </button>
+          </article>
+
+          <article class="product-card">
+            <div class="product-card__image">
+              <span class="product-badge--new">new</span>
+              <img src="images/city.jpg" alt="" />
+            </div>
+            <p class="product-card__vendor">Nomad</p>
+            <h3 class="product-card__title">All-Terrain Boot</h3>
+            <p class="product-card__price">$178.00</p>
+            <button type="button" class="product-card__button">
+              add to cart
+            </button>
+          </article>
+
+          <article class="product-card">
+            <div class="product-card__image">
+              <img src="images/beach.jpg" alt="" />
+            </div>
+            <p class="product-card__vendor">Nomad</p>
+            <h3 class="product-card__title">Field Soap Bar</h3>
+            <p class="product-card__price">$18.00</p>
+            <button type="button" class="product-card__button">
+              add to cart
+            </button>
+          </article>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
