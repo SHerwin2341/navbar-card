@@ -5,7 +5,6 @@
   --color-light: #e5dfd5;
   --color-white: #fdfaf6;
   --color-accent: #c8471a;
-  --font-display: "Fraunces", serif;
   --font-body: "DM Sans", sans-serif;
 }
 
@@ -16,9 +15,11 @@
 
 body {
    margin: 0;
+   font-family: var(--font-body);
+   background-color: var(--color-bg);
 }
 
-/*CSS Styling for the header Section */
+
 .navbar {
    padding: 1rem 2rem;
    background-color: var(--color-dark);  
@@ -32,7 +33,6 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  flex-direction: row;
   gap: 1rem; 
 
 }
@@ -57,12 +57,6 @@ body {
   color: var(--color-mid);
 }
 
-.main-content {
- background-color: var(--color-bg);
-}
-
-/*Styling for main header*/
-
 .featured-products__header {
   display: flex;
   justify-content: space-between;
@@ -78,4 +72,83 @@ body {
   font-size: 1.5rem;
   color: var(--color-mid);
   margin: 2rem;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.product-card {                       
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; 
+  background-color: var(--color-white);
+  border-radius: 20px;
+  max-width: 16em;
+ 
+}
+
+.product-card__image {
+ aspect-ratio: 1;
+ position: relative
+}
+
+.product-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover
+}
+
+.product-badge--sale {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  padding: .5rem;
+  background-color: orange;
+  color: white; 
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.product-badge--new {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  padding: .5rem;
+  background-color: green;
+  color: white; 
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.product-card__vendor {
+  padding: 0.2rem 1.2rem;  
+  text-transform: uppercase; 
+  color: var(--color-mid);
+}
+
+.product-card__title {
+  padding: 0.2rem 1.2rem;
+}
+
+.product-card__price {
+  padding: 0.2rem 1.2rem; 
+}
+
+.product-card__price-compare {
+  color: var(--color-mid);
+}
+
+.product-card__button {
+  height: 3rem; 
+  background-color: black; 
+  color: white;   
+  text-transform: uppercase;
+  align-self: stretch;
+  border-style: none;
+  cursor: pointer;
 }
