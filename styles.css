@@ -18,6 +18,7 @@ body {
    margin: 0;
 }
 
+/*CSS Styling for the header Section */
 .navbar {
    padding: 1rem 2rem;
    background-color: var(--color-dark);  
@@ -51,7 +52,30 @@ body {
   color: var(--color-white);
   cursor: pointer;
 }
-
+ 
 .navbar nav a {
   color: var(--color-mid);
+}
+
+.main-content {
+ background-color: var(--color-bg);
+}
+
+/*Styling for main header*/
+
+.featured-products__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.featured-products__header h2 {
+  font-size: 3rem;
+  margin: 2rem;
+}
+
+.featured-products__header a {
+  font-size: 1.5rem;
+  color: var(--color-mid);
+  margin: 2rem;
 }
